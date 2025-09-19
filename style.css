@@ -1,0 +1,171 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.profile-img {
+  width: 200px;       /* set size */
+  height: 200px;      /* make it equal width & height */
+  border-radius: 50%; /* makes it circular */
+  object-fit: cover;  /* crops inside the circle neatly */
+  border: 5px solid #e91e63; /* optional border color */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* optional shadow */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #ffdde1, #ee9ca7);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 28px;
+  color: #e91e63;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #e91e63;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #e91e63, #ff6f61);
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 50px;
+  font-family: 'Great Vibes', cursive;
+}
+
+.hero .highlight {
+  color: yellow;
+}
+
+.hero p {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.hero button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  background: #fff;
+  color: #e91e63;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #ffebee;
+}
+
+/* Section */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #e91e63;
+}
+
+/* Skills */
+.skills-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skills-list li {
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* Projects */
+.project-card {
+  background: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  width: 70%;
+  border-radius: 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+}
+
+form input, form textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+form button {
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: #e91e63;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #d81b60;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  margin-top: 30px;
+}
